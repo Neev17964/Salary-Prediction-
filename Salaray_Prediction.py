@@ -26,7 +26,6 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.33,random_s
 model = LR.Linear_Regression(learning_rate=0.02, no_of_iterations=1000)
 model.fit(X_train, Y_train)
 
-test_data_preditction = model.predict(X_test)
 
 def predict_salary():
     try:
